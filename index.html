@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAAYA SOCIAL</title>
+    <title>RAAYA SOCIAL - LANDING PAGE</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    RAAYA SOCIAL LANDING PAGE DESIGN
+    <!-- page header (navbar) -->
+   <header class="site-header" id="header">
+  <div class="container site-header__inner">
+
+  
+    <a href="#home" class="site-header__logo" aria-label="Raaya Social — Home">
+      <img src="media/logo.svg" alt="Raaya Social" />
+    </a>
+
+
+    <nav class="nav nav--primary" aria-label="Primary" id="desktopNav"></nav>
+
+    <!--  Actions -->
+    <div class="nav-actions nav-actions--desktop">
+      <a href="#login" class="btn btn--ghost">Log in</a>
+      <a href="#demo" class="btn btn--outline">Book a demo</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button
+      class="hamburger"
+      id="menuBtn"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+  
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path d="M3 6h18M3 12h18M3 18h18"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__panel" role="dialog" aria-modal="true">
+
+      <div class="mobile-menu__head">
+        <a href="#home" class="site-header__logo">
+          <img src="media/logo.svg" alt="Raaya Social" style="height:44px;" />
+        </a>
+
+        <button class="mobile-menu__close" id="closeBtn">
+          <!-- Close Icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M6 6l12 12M18 6L6 18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-menu__nav" id="mobileNav"></nav>
+
+      <div class="mobile-menu__actions">
+        <a href="#login" class="btn btn--ghost">Log in</a>
+        <a href="#demo" class="btn btn--outline">Book a demo</a>
+      </div>
+
+    </div>
+  </div>
+</header>
+<script src="/scripts/index.js"></script>
 </body>
 </html>
