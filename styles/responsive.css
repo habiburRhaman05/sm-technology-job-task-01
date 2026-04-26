@@ -100,3 +100,18 @@
   .tm__videos      { grid-template-columns: repeat(4, 1fr); }
   .tm__quotes      { grid-template-columns: repeat(2, 1fr); }
 }
+
+@media (min-width: 1024px) {
+  .hero__grid {
+    grid-template-columns: 1.05fr 1fr;
+    gap: var(--space-16);
+  }
+  .services-card__grid {
+    grid-template-columns: 1fr 1px 1fr;
+    gap: var(--space-16);
+  }
+  .gallery__track  { grid-template-columns: repeat(4, 1fr); }
+  .gallery__next   { display: inline-flex; }
+  .why__grid       { grid-template-columns: 1fr 1fr; gap: var(--space-16); }
+  .footer__grid    { grid-template-columns: 1.4fr 1fr 1fr 1.3fr; gap: var(--space-12); }
+}
