@@ -769,10 +769,10 @@ a.clients__logo.global img {
   box-shadow: var(--shadow-md);
 }
 .services-card__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-12);
-  align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: var(--space-12);
+    align-items: start;
 }
 .services-card__head { display: flex; align-items: center; gap: var(--space-3); }
 .services-card__title {
