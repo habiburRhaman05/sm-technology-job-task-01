@@ -663,7 +663,7 @@ color: white;
 
 .clients {
   background: #ffffff;
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .clients .container {
@@ -994,7 +994,42 @@ a.clients__logo.global img {
 #portfolio-gallery{
   padding-top: 80px;
 }
+.gallery__viewport {
+  position: relative;
+  overflow: hidden;
+}
 
+.gallery__track {
+  display: flex;
+  gap: var(--space-5);
+  transition: transform 0.45s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+
+.vcard {
+  flex: 0 0 calc((100% - (3 * var(--space-5))) / 4);
+}
+
+/* buttons */
+.gallery__prev,
+.gallery__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-text);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.gallery__prev { left: -10px; }
+.gallery__next { right: -10px; }
 
 /* why choose me */
 
