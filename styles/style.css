@@ -32,7 +32,7 @@
   --color-youtube:   #FF0000;
   --color-linkedin:  #0A66C2;
 
-  /* all gradients  colors like (heros texts, titles) */
+  /*  gradients  */
   --gradient-brand:   linear-gradient(135deg, var(--color-brand), var(--color-brand-accent));
   --gradient-heading: linear-gradient(90deg, var(--color-brand-strong), var(--color-brand) 60%, var(--color-brand-accent));
   --gradient-soft:    linear-gradient(135deg, var(--color-brand-soft), #fff);
@@ -83,7 +83,6 @@
   --shadow-md:    0 8px 24px rgba(15, 17, 21, 0.08);
   --shadow-lg:    0 20px 60px rgba(15, 17, 21, 0.10);
   --shadow-brand: 0 12px 30px rgba(139, 61, 255, 0.30);
-  /* focus and blurs */
   --focus-ring: rgba(139, 61, 255, 0.35);
   --ease:       cubic-bezier(.2, .7, .2, 1);
   --dur:        250ms;
@@ -153,7 +152,7 @@ strong { font-weight: var(--fw-semibold); color: var(--color-text-strong); }
 
 
 /*  main layout   */
-/* page-wide horizontal wrapper, capped at 1200 */
+
 .container,
 .page-container {
   width: 100%;
@@ -459,7 +458,7 @@ color: white;
   color: var(--color-brand-hover);
 }
 
-/* mobile drawer (slide-in from right) */
+/* mobile menu */
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -518,7 +517,7 @@ color: white;
 
 
 
-/* hero / banner section design */
+/* hero banner */
 
 .hero {
   background: var(--color-surface-muted);
@@ -855,7 +854,7 @@ a.clients__logo.global img {
 }
 
 
-/* process section - how to work */
+/* process section */
 
 .step {
   background: var(--color-surface);
@@ -975,7 +974,7 @@ a.clients__logo.global img {
 .gallery__next {
   position: absolute;
   top: 50%; right: -8px;
-  transform: translateY(-50%);
+
   width: 40px; height: 40px;
   border-radius: 50%;
   background: var(--color-text);
@@ -988,7 +987,6 @@ a.clients__logo.global img {
 }
 .gallery__next:hover {
   background: var(--color-brand-hover);
-  transform: translateY(-50%) scale(1.06);
 }
 
 #portfolio-gallery{
@@ -1015,7 +1013,7 @@ a.clients__logo.global img {
 .gallery__next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+
   width: 42px;
   height: 42px;
   border-radius: 50%;
